@@ -8,6 +8,7 @@ let gameturn = "X"
 let isgameover = false
 let turncount=0
 
+
 //function to change the turn
 const changeTurn = () => {
   return gameturn === "X" ? "O" : "X"
@@ -50,7 +51,7 @@ const checkWin = ()=>{
           if(gameovervolume)
           {
             gameover.play();
-            gameover.volume=0.6;
+            gameover.volume=0.8;
             gameovervolume=false;
           }
 
@@ -74,7 +75,7 @@ const checkWin = ()=>{
 
 //music for game
 music1.play();
-music1.volume=0.7;
+music1.volume=0.3;
 
 //game logic
 let boxes = document.getElementsByClassName("box");
@@ -88,7 +89,7 @@ Array.from(boxes).forEach(element => {
       gameturn = changeTurn();
       turncount++;
       turn.play();
-      turn.volume=0.2;
+      turn.volume=0.5;
       checkWin();
       if(!isgameover){
         document.getElementsByClassName("info")[0].innerText = "Turn for " + gameturn;

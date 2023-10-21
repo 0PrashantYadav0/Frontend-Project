@@ -19,9 +19,17 @@ a{
   color: antiquewhite;
 }
 
+.menu-icon{
+  font-size: 2.5rem;
+}
+
 .navbar-top a{
   color: antiquewhite;
   font-size: 1.3em;
+}
+
+.navbar-top a:hover{
+  color: rgb(176, 156, 129);
 }
 
 .gamecontainer{
@@ -149,7 +157,7 @@ body {
   background-color: #713673;
 }
 
-@media screen and (max-width:800px)
+@media screen and (max-width:900px)
  {
   .gamecontainer{
     flex-wrap: wrap;
