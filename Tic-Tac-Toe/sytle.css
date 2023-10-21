@@ -3,10 +3,12 @@
   padding: 0px;
   font-family: Cursive;
 }
+
 a{
   text-decoration: none;
   background-color: brown;
 }
+
 .navbar-top{
   height: 70px;
   width: 100%;
@@ -16,20 +18,24 @@ a{
   align-items: center;
   color: antiquewhite;
 }
+
 .navbar-top a{
   color: antiquewhite;
   font-size: 1.3em;
 }
+
 .gamecontainer{
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
+
 .container{
   display: grid;
   grid-template-rows: repeat(3, 10vw);
   grid-template-columns: repeat(3, 10vw);
 }
+
 .box{
   border: 4px solid rgb(73, 22, 73);
   font-size: 8vw;
@@ -37,10 +43,11 @@ a{
   justify-content: center;
   align-items: center;
 }
+
 .box:hover{
   background: linear-gradient(180deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-
 }
+
 .gaminginfo{
   padding: 0px 50px;
   display: flex;
@@ -48,52 +55,65 @@ a{
   align-items: center;
   justify-content: space-between;
 }
+
 .bt-top{
   border-top: 0;
 }
+
 .bt-bottom{
   border-bottom: 0;
 }
+
 .bt-left{
   border-left: 0;
 }
+
 .bt-right{
   border-right: 0;
 }
+
 .imgbox{
   position: relative;
   top: 0px;
 }
+
 .drawbox{
   position: relative;
   top: 0px;
 }
+
 .imgbox img{
   padding-top: 1vw;
   width: 0;
   transition: width 1s ease-in-out;
 }
+
 .lossbox img{
   padding-top: 1vw;
   width: 250px;
   transition: width 1s ease-in-out;
 }
+
 .main-img-box{
   display: flex;
   flex-wrap: wrap;
 }
+
 .drawbox img{
   padding-top: 1vw;
   width: 0;
   transition: width 1s ease-in-out;
 }
+
 .gaminginfo h1{
   font-size: 2.5rem;
 }
+
 .info{
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
+
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -112,6 +132,7 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
 #reset{
   height: 2.5vw;
   width: 5vw;
@@ -123,10 +144,12 @@ body {
   color: white;
   background-color: #421c43;
 }
+
 #reset:hover{
   background-color: #713673;
 }
- @media screen and (max-width:800px)
+
+@media screen and (max-width:800px)
  {
   .gamecontainer{
     flex-wrap: wrap;
@@ -158,4 +181,4 @@ body {
     height: 80%;
     width: 80%;
   }
- }
+}
