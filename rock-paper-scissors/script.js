@@ -34,8 +34,8 @@ function computerMove(){
 function playgame(playermove){
 
   //music for game
-  music1.play();
-  music1.volume=0.4;
+  // music1.play();
+  // music1.volume=0.4;
 
   // sound on clicking any button
   turn.play();
