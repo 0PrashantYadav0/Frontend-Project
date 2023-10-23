@@ -144,8 +144,8 @@ function playgame(playermove){
 reset.addEventListener('click', (e)=>{
 
   //music for game
-  music1.play();
-  music1.volume=0.4;
+  // music1.play();
+  // music1.volume=0.4;
 
   //gameover sound
   gameover.play();
@@ -154,7 +154,7 @@ reset.addEventListener('click', (e)=>{
     //alert for winner team
   if(score.wins > score.losses){
     alert(
-      "Are you sure you want to reset as you have more score then computer."
+      "Are you sure you want to reset as you have more score than computer."
     )
   }
 
