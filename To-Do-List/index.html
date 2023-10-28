@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do-List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="body-div-main">
+    <div class="body-div-inner-first">
+      <img src="userpic.png" alt="userpic" class="userpic" height="180px">
+      <div class="usernameinputbox">
+        <input type="text" class="usernameinput">
+      </div>
+      <div class="username">
+        USERNAME
+      </div>
+      <div class="displaytagname">
+        <ul class="inputtags">
+        </ul>
+      </div>
+    </div>
+    <div class="body-div-inner-second">
+      <div class="inner-second-first">
+        <input type="text" placeholder="Your purpose" class="namefortag" onkeydown="entervalue(event)">
+        <button class="tagit">
+          TAGS
+        </button>
+      </div>
+      <div class="inputworkdiv">
+        <input type="text" placeholder="Task" class="taskname">
+        <input type="date" class="datebutton">
+        <button class="addbutton">
+          ADD
+        </button>
+      </div>
+      <div class="displaylistofwork">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

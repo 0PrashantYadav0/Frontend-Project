@@ -29,6 +29,74 @@ function computerMove(){
   return computerpick;
 }
 
+
+//Auto playing the game
+let isautoplaying = false;
+let intervalID;
+
+function autoplay(){
+
+  //gameover sound
+  gameover.play();
+  gameover.volume=0.7;
+
+  if(!isautoplaying)
+  {
+    intervalID = setInterval(function() {
+      const playerpick = computerMove();
+      playgame(playerpick);
+    },2000);
+    isautoplaying=true;
+    document.getElementsByClassName('GAMEMODE')[0].innerText = "In Auto Play mode";
+    document.getElementById("Autoplay").innerText = "MANUAL";
+  }
+  else{
+    clearInterval(intervalID);
+    document.getElementsByClassName('GAMEMODE')[0].innerText = "Not on Auto Play";
+    document.getElementById("Autoplay").innerText = "AUTOPLAY";
+
+    isautoplaying = false;
+  }
+}
+
+//fix number of moves
+
+function numberplay(){
+
+  //gameover sound
+  gameover.play();
+  gameover.volume=0.7;
+  
+  const filled = document.querySelector('.js-number-input');
+  const inputnumber = filled.value;
+
+  for(i=0 ;i<inputnumber ; i++)
+  {
+    const playerpick = computerMove();
+    playgame(playerpick);
+  }
+}
+
+//Output on enter
+function handleoutput(event){
+  if(event.key == 'Enter'){
+    numberplay();
+  }
+}
+
+//playing by pressing key
+document.body.addEventListener('keydown', (event) => {
+  if(event.key === 'r'){
+    playgame("rock");
+  }
+  else if(event.key === 'p'){
+    playgame("paper");
+  }
+  else if(event.key === 's'){
+    playgame("scissors");
+  }
+})
+
 //playing game function
 
 function playgame(playermove){
@@ -137,7 +205,8 @@ function playgame(playermove){
   <img src="${playermove}-emoji.png" alt="">
   Computer's pick
   <img src="${computerpicksit}-emoji.png" alt="">`;
-}
+
+};
 
 
 //reseting the value

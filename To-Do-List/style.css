@@ -1,0 +1,178 @@
+*{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  background: rgb(38,140,213);
+  background: linear-gradient(215deg, rgba(38,140,213,1) 1%, rgba(20,7,129,1) 49%, rgba(133,75,193,1) 100%);
+  color: #b0a8af;
+}
+
+.body-div-main{
+  height: 1000px;
+  width: 100%;
+  background-color: black;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.body-div-inner-first{
+  height: 70%;
+  width: 20%;
+}
+.userpic{
+  padding: 10px 10px;
+  padding-left: 15%;
+  background: transparent;
+}
+.username, .usernameinputbox{
+  background: transparent;
+  font-size: 1.6rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.newname{
+  height: 20px;
+  width: 100px;
+}
+.inputtags{
+  color: rgb(245, 245, 245);
+  background: transparent;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+li{
+  background: transparent;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  list-style: inside;
+  list-style-type: square;
+  color: rgb(208, 217, 86);
+  cursor: pointer;
+}
+.displaytagname{
+  background: transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.body-div-inner-second{
+  height: 66%;
+  width: 60%;
+  padding: 20px;
+}
+.inner-second-first{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.namefortag{
+  height: 30px;
+  width: 220px;
+  font-size: 1.1rem;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid black;
+  color: black;
+  box-shadow: 2px 2px 5px rgb(169, 169, 230);
+  margin-right: 10px;
+}
+.tagit{
+  height: 27px;
+  width: 60px;
+  font-size: 1.1rem;
+  border: none;
+  background: transparent;
+  box-shadow: 5px 5px 10px black;
+  background-color: rgb(50, 147, 195);
+  color: black;
+}
+.inputworkdiv{
+  background: transparent;
+}
+.taskname, .datebutton, .addbutton,.deletebutton, .outputtask ,.outputdate{
+  height: 22px;
+  width: 150px;
+  display: inline;
+  background: transparent;
+  border: none;
+  box-shadow: 5px 5px 10px black;
+  margin: 20px;
+}
+.addbutton{
+  height: 25px;
+  width: 60px;
+  background: transparent;
+  background-color: rgb(88, 126, 31);
+  color: black;
+}
+.deletebutton{
+  height: 25px;
+  width: 60px;
+  background: transparent;
+  background-color: rgb(205, 56, 56);
+  color: black;
+}
+.displaylistofwork{
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+}
+
+.body-div-inner-second{
+  overflow:hidden;
+  position:relative;
+  }
+.body-div-inner-second::before{ 
+  content:'';
+  font-family:'shape divider from ShapeDividers.com';
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw; 
+  background-size: 100% 140px;
+  background-position: 50% 100%;  
+  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000.4 84"><g fill="%233c0561"><path d="M63 35v38l-1 1-17 10H16L0 75V34l30-18 33 19z" opacity=".5"/><path d="M133 54v30H74V54l30-17 29 17z"/><path d="M284 24v49l-2 1-8 5-9 5h-45l-15-9-2-1-2-1V24l41-24 42 24zM157 40V20l-17-10-18 10v20l18 10 17-10z" opacity=".75"/><path d="M189 25V12l-10-6-11 6v13l11 6 10-6z"/><path d="M205 52v32h-59V52l29-17 26 15 4 2z" opacity=".5"/><path d="M186 75v9h-59v-9l3-1 3-2 13-7 11-6 27 15 2 1zM99 34V15L82 6l-16 9v19l16 10 17-10zM340 41v38l-8 5h-50l-8-5V41l10-6 23-13 33 19z"/><path d="M410 60v24h-59V60l29-17 30 17z" opacity=".5"/><path d="M569 30v49l-5 3-4 2h-66l-5-3-4-2V30l42-24 37 21 5 3zM433 46V26l-17-10-17 10v20l17 10 17-10zM466 31V18l-11-6-11 6v13l11 6 11-6z"/><path d="M496 56v28h-63V56l31-18 28 16 4 2z"/><path d="M463 82v2h-59v-2l6-4 7-4 5-3 11-6 17 9 13 8z"/><path d="M375 40V21l-16-9-17 9v19l17 10 16-10z" opacity=".5"/><path d="M837 41v38l-8 5h-50l-8-5V41l33-19 33 19zM677 46V26l18-10 17 10v20l-17 10-18-10z"/><path d="M645 31V18l10-6 11 6v13l-11 6-10-6z" opacity=".5"/><path d="M546 17V6l9-6 10 6v11l-10 5-9-5z" opacity=".75"/><path d="M688 58v26h-58V58l4-2 25-15 29 17z"/><path d="M707 82v2h-59v-2l13-8 16-9 11 6 6 3 7 4 6 4z"/><path d="M791 82v2h-58v-2l13-8 16-9 11 6 5 3 8 4 5 4z" opacity=".5"/><path d="M736 40V21l16-9 16 9v19l-16 10-16-10z"/><path d="M918 37v38l-16 9h-35l-15-9V37l33-19 33 19z" opacity=".75"/><path d="M988 55v29h-59V55l29-17 30 17z"/><path d="M1139 26v48l-11 6-6 4h-50l-13-7-4-3V26l42-24 42 24z" opacity=".5"/><path d="M1011 42V22l-17-10-17 10v20l17 10 17-10zM858 24V9l-14-8-13 8v15l13 8 14-8z" opacity=".75"/><path d="M868 84h-39l17-10 2-1 3 1 17 10zM293 76v8h-39v-8l3-2 17-9 16 9 3 2zM359 76v8h-39v-8l3-2 17-9 16 9 3 2zM226 84h-38l17-10 2-1 2 1 17 10zM81 84H43l17-10 2-1 2 1 17 10zM940 84h-39l17-10 2-1 3 1 17 10zM1081 75v9h-39v-9l3-1 16-10 17 10 3 1zM1147 84h-38l17-10 2-1 2 1 17 10zM1642 84h-39l17-10 2-1 3 1 17 10zM1722 67v17h-38V67l19-11 19 11zM1794 77v7h-38v-7l5-3 14-8 8 5 6 3 5 3zM1044 26V14l-11-7-11 7v12l11 6 11-6z"/><path d="M1059 54v30h-59V54l30-17 25 15 4 2z"/><path d="M1041 77v7h-59v-7l5-3h1l12-8 11-6 24 14 6 3z"/><path d="M953 36V17L937 7l-17 10v19l17 9 16-9z" opacity=".5"/><path d="M1194 43v38l-5 3h-56l-5-3V43l11-6 22-13 33 19z"/><path d="M1264 61v23h-59V61l30-17 29 17zM1415 32v48l-5 3-1 1h-71l-3-1-4-3V32l42-24 37 21 5 3zM1288 48V28l-18-10-17 10v20l17 10 18-10z" opacity=".5"/><path d="M1320 32V20l-10-6-11 6v12l11 6 10-6zM1335 60v24h-58V60l29-17 25 15 4 2z"/><path d="M1317 83v1h-59v-1l6-3 10-6 3-2 11-6 13 8 16 9zM1222 83v1h-59v-1l6-3 10-6 3-2 11-6 13 8 16 9z"/><path d="M1230 42V23l-17-9-16 9v19l16 9 17-9z" opacity=".75"/><path d="M1691 43v38l-5 3h-55l-5-3V43l32-19 33 19z" opacity=".5"/><path d="M1614 61v23h-59V61l30-17 29 17zM1488 32v48l-4 3-2 1h-71l-1-1-6-3V32l6-3 36-21 42 24z"/><path d="M1532 48V28l17-10 17 10v20l-17 10-17-10z" opacity=".75"/><path d="M1499 32V20l11-6 11 6v12l-11 6-11-6z" opacity=".5"/><path d="M1400 18V7l10-5 9 5v11l-9 6-10-6z"/><path d="M1543 60v24h-59V60l4-2 25-15 30 17z" opacity=".75"/><path d="M1561 83v1h-59v-1l16-9 14-8 11 6 2 2 10 6 6 3z" opacity=".75"/><path d="M1590 42V23l16-9 17 9v19l-17 9-16-9z" opacity=".5"/><path d="M1772 41v38l-8 5h-50l-8-5V41l33-19 33 19z"/><path d="M1842 60v24h-59V60l30-17 29 17z" opacity=".5"/><path d="M1988 30v49l-10 5h-65l-5-3-4-2V30l42-24 42 24zM1866 46V26l-17-10-18 10v20l18 10 17-10z"/><path d="M1898 30V18l-10-6-11 6v12l11 7 10-7zM1997 17V6l-9-6-10 6v11l10 5 9-5z" opacity=".5"/><path d="M1913 58v26h-58V58l29-17 25 15 4 2z" opacity=".75"/><path d="M1895 81v3h-59v-3l6-3 7-4 6-3 11-7 16 10 13 7zM2000 75v9h-42l4-5 5-5 9-11 12 6 7 3 3 2 2 1z"/><path d="M1808 40V21l-17-9-16 9v19l16 9 17-9z" opacity=".75"/><path d="M1709 29V14l-13-7-12 7v15l12 7 13-7z"/><path d="M634 30v49l-4 2-5 3h-66l-4-2-5-3V30l5-3 37-21 42 24z" opacity=".75"/><path d="M3 74l-2-1H0v11h20L3 74z"/><path d="M760 60v24h-59V60l29-17 30 17z" opacity=".5"/></g></svg>');
+  }
+  
+@media (min-width:2100px){
+  .body-div-inner-second::before{
+  background-size: 100% calc(2vw + 140px);
+  }
+  }
+   
+
+  
+  
+input {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: .8vw;
+    color: #fff;
+    background-color: rgb(28,28,30);
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    max-width: 190px;
+    transition: .4s;
+  }
+  
+input:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+  }
+  
+input:focus {
+    box-shadow: 0 0 0 .15vw skyblue;
+  }
+   

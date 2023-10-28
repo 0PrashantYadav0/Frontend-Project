@@ -25,27 +25,28 @@
   border-radius: 50%;
 }
 .reset-div{
-  position: relative;
-  border: 2px black;
-  top: 2vw;
-  left: 80vw;
-  height: 80px;
-  width: 80px;
-  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
 }
 #reset{
   height: 60px;
   width: 80px;
-  border: 2px solid white;
+  border: 3px solid rgb(90, 14, 81);
   border-radius: 30px;
   cursor: pointer;
   background-image: url(reset.jpeg);
   background-size: contain;
   z-index: 2;
 }
+#Autoplay{
+  height: 60px;
+  width: 180px;
+  border: 3px solid rgb(90, 14, 81);
+  border-radius: 20px;
+  cursor: pointer;
+}
 .content-div{
   height: 13vw;
-  /* width: 100%; */
   display: flex;
   justify-content: space-around;
   font-family: Arial, Helvetica, sans-serif;
@@ -59,15 +60,32 @@
   font-family: cursive;
 }
 .result-div{
-  padding-bottom: 10px;
-  padding-left: 100px;
-  position: relative;
-  top: -50px;
+  padding: 40px 100px 40px ;
   width: 80vh;
 }
 .result-div img{
   height: 80px;
 }
+
+.GAMEMODE{
+  padding-left: 400px;
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+.startbynumber, .js-number-input{
+  border: 3px solid rgb(90, 14, 81);
+  border-radius: 10px;
+  height: 60px;
+  font-size: 1.3rem;
+}
+
+.startbynumber{
+  width: 80px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width:900px) {
   .main-box{
