@@ -34,7 +34,7 @@
   border: 3px solid rgb(90, 14, 81);
   border-radius: 30px;
   cursor: pointer;
-  background-image: url(reset.jpeg);
+  background-image: url(img/reset.jpeg);
   background-size: contain;
   z-index: 2;
 }

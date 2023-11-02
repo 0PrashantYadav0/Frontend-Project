@@ -1,14 +1,17 @@
 console.log("hello you");
 
-let music1 = new Audio("music1.mp3");
-let turn = new Audio("ting.mp3");
-let gameover = new Audio("gameover.mp3");
+
+let music1 = new Audio("music/music1.mp3");
+let turn = new Audio("music/ting.mp3");
+let gameover = new Audio("music/gameover.mp3");
+
 
 const score = {
   wins: 0,
   losses: 0,
   ties: 0
 };
+
 
 //computer moves being pick here
 function computerMove(){
@@ -59,6 +62,7 @@ function autoplay(){
   }
 }
 
+
 //fix number of moves
 
 function numberplay(){
@@ -77,12 +81,14 @@ function numberplay(){
   }
 }
 
+
 //Output on enter
 function handleoutput(event){
   if(event.key == 'Enter'){
     numberplay();
   }
 }
+
 
 //playing by pressing key
 document.body.addEventListener('keydown', (event) => {
@@ -97,13 +103,14 @@ document.body.addEventListener('keydown', (event) => {
   }
 })
 
+
 //playing game function
 
 function playgame(playermove){
 
   //music for game
-  // music1.play();
-  // music1.volume=0.4;
+  music1.play();
+  music1.volume=0.4;
 
   // sound on clicking any button
   turn.play();
@@ -163,6 +170,7 @@ function playgame(playermove){
   }
 
 
+
   else if(playermove ==='scissors')
   {
 
@@ -188,6 +196,7 @@ function playgame(playermove){
 
   }
 
+
   //changing the values of different results
 
   //win case
@@ -202,9 +211,9 @@ function playgame(playermove){
 
   // showing the picks in picture
   document.querySelector('.result-div').innerHTML =  `Your pick
-  <img src="${playermove}-emoji.png" alt="">
+  <img src="img/${playermove}-emoji.png" alt="">
   Computer's pick
-  <img src="${computerpicksit}-emoji.png" alt="">`;
+  <img src="img/${computerpicksit}-emoji.png" alt="">`;
 
 };
 
@@ -213,8 +222,8 @@ function playgame(playermove){
 reset.addEventListener('click', (e)=>{
 
   //music for game
-  // music1.play();
-  // music1.volume=0.4;
+  music1.play();
+  music1.volume=0.4;
 
   //gameover sound
   gameover.play();
@@ -227,6 +236,7 @@ reset.addEventListener('click', (e)=>{
     )
   }
 
+  
   // //changing the value back to zero 
 
   score.ties=0;

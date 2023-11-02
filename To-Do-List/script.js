@@ -46,22 +46,22 @@ function taglist(){
   for (let j = 0; j < tagnames.length; j++) 
   {
     const worktag = tagnames[j];
-    const html = `<li class="worktask">${worktag}</li>`;
+    const html = `<li class="worktask${j}">${worktag}</li>`;
     taglistHTML += html;
   }
 
   document.querySelector('.inputtags').innerHTML = taglistHTML;
 
+  (document.querySelector('.namefortag')).value = "";
 }
 
 //input of task list
 const tasknames = [];
 const taskdates = [];
 
-function taskdisplaylist(){
+rendertodo();
 
-  //initial html 
-  let tasklistHTML = ``;
+function taskdisplaylist(){
 
   //fetching data
   const tasknamefilled = (document.querySelector('.taskname')).value;
@@ -71,21 +71,52 @@ function taskdisplaylist(){
   tasknames.push(tasknamefilled);
   taskdates.push(taskdatefilled);
 
+  (document.querySelector('.taskname')).value = "";
+
+  rendertodo();
+
+}
+
+function rendertodo(){
+
+  //initial html 
+  let tasklistHTML = ``;
   //displaying data
   for (let j = 0; j < tasknames.length; j++) 
   {
     const worktask = tasknames[j];
     const workdate = taskdates[j];
-    const html = `<div class="outputtask">${worktask}</div>
-    <p class="outputdate">${workdate}</p>
-    <button class="deletebutton">
-      DELETE
-    </button>`;
-    tasklistHTML += html;
+    const html = `
+    <li class="outputtask">
+      ${worktask}
+    </li>
+    <li class="outputdate">
+      ${workdate}
+    </li>
+    <button class="deletebutton" data-task-index="${j}" onclick="deleteTask(this)">
+  DELETE
+</button>
+`;
+    tasklistHTML += html; 
   }
 
   document.querySelector('.displaylistofwork').innerHTML = tasklistHTML;
 
+}
+
+function deleteTask(button) {
+  const taskIndex = button.getAttribute("data-task-index");
+  if (taskIndex !== null) {
+    // Convert the taskIndex to a number
+    var taskIndexs = parseInt(taskIndex);
+
+    // Remove the task from the arrays
+    tasknames.splice(taskIndexs, 1);
+    taskdates.splice(taskIndexs, 1);
+
+    // Re-render the to-do list
+    rendertodo();
+  }
 }
 
 
@@ -108,13 +139,7 @@ printtag.addEventListener('click', (e) => {
 
 //by add button input 
 const addtask = document.querySelector('.addbutton');
-addtask.addEventListener('click', (e) => {
+addtask.addEventListener('click', (f) => {
   taskdisplaylist();
 });
 
-
-//delete button work
-const deletetask = document.querySelector('.addbutton');
-deletetask.addEventListener('click', (e) => {
-  taskdeletelist();
-});
