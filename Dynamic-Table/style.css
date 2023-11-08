@@ -1,3 +1,8 @@
+*{
+  background-color: #000;
+  color: white;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -12,7 +17,41 @@ th, td {
 button {
   margin: 15px;
 }
-
+#addRow{
+  height: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 1rem;
+  background-color: aquamarine;
+  color: #000;
+}
+#showData, .delete-row{
+  height: 2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  border: 0;
+  border-radius: 1rem;
+}
+#showData{
+  background-color: aqua;
+}
+.delete-row{
+  background-color: red;
+  color: white;
+}
 button#showData {
   display: none;
+}
+input{
+  background-color: aliceblue;
+  border: 0;
+  height: 1.5rem;
+  color: white;
 }
