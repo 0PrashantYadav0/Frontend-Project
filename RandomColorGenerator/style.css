@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+nav{
+  background-color: black;
+  height: 10vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p{
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+a{
+  text-decoration: none;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.main-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  margin-top: 50px;
+}
+.create{
+  height: 4vh;
+  width: 11vh;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+.output{
+  /* border: 2px solid black; */
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: 600;
+}
+.color-output{
+  height: 50vh;
+  width: 100vh;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 12px;
+}
+.second{
+  display: flex;
+}
+.copy{
+  height: 2vh;
+  width: 5vh;
+  font-size: 0.6rem;
+  background-color: beige;
+  border: none;
+}

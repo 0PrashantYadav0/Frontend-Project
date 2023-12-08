@@ -1,0 +1,81 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.navbar{
+  display: flex;
+  height: 10vh;
+  color: white;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  font-size: 1.2rem;
+}
+.second-navbar{
+  display: flex;
+}
+.second-navbar a{
+  margin-left: 8vh;
+}
+.body-div{
+  display: flex;  
+}
+.inputarea{
+  height: 60vh;
+  width: 80vh;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20vh;
+}
+input{
+  height: 6vh;
+  width: 40vh;
+  padding: 2vh;
+  border: 4px solid rgb(105, 103, 103);
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.4rem;
+  margin-bottom: 6vh;
+  margin-top: 2vh;
+}
+.submitbtn{
+  height: 8vh;
+  width: 30vh;
+  background-color: aqua;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+}
+.outputarea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  height: 60vh;
+  font-size: 1.2rem;
+}
+
+
+@media only screen and (max-width:600px) {
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    margin: 1vh;
+  }
+  .body-div{
+    display: flex;
+    flex-direction: column;
+  }
+}

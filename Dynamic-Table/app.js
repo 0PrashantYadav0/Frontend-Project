@@ -7,7 +7,7 @@ let rowCount = 1;
 addRowButton.addEventListener("click", () => {
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
-        <td>${rowCount}</td>
+        <td class="count">${rowCount}</td>
         <td><input type="text" class="student-name"></td>
         <td><input type="text" class="roll-no"></td>
         <td><input type="text" class="month"></td>
