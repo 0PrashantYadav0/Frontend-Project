@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-div{
+  height: 80vh;
+  width: 150vh;
+  background: #000;
+}
