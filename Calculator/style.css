@@ -9,6 +9,10 @@ body{
   color: white;
 }
 
+.divider{
+  display: flex;
+}
+
 .calculator{
   display: flex;
   flex-direction: column;
@@ -45,4 +49,9 @@ button{
 .inputArea{
   display: flex;
   justify-content: space-between;
+}
+
+.history{
+  color: white;
+  padding-left: 4rem;
 }

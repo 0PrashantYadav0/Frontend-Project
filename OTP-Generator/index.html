@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP generator</title>
+</head>
+<style>
+  body {
+    background-color: #f2f2f2;
+  }
+  .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  #otp{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 0.5rem;
+  }
+</style>
+<body>
+  <div class="main">
+    <h1>OTP generator</h1>
+    <input type="text" id="otp"/>
+    <button class="btn" id="btn"> Generate</button>
+  </div>
+  
+</body>
+<script src="app.js"></script>
+</html>

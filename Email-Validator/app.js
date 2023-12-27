@@ -1,4 +1,4 @@
-console.log("This is my script")
+console.log("This is my script");
 
 let result = {
     "tag": "",
@@ -18,7 +18,7 @@ let result = {
     "format_valid": true
 }
 
-const submitBtn = document.querySelector('.submitbtn')
+const submitBtn = document.querySelector('.submitbtn');
 
 
 submitBtn.addEventListener("click", async (e) => {
@@ -26,7 +26,7 @@ submitBtn.addEventListener("click", async (e) => {
     e.preventDefault()
     console.log("Clicked!")
     resultCont.innerHTML = `<h1>wait</h1>`
-    let key = "ema_live_ITkV5Pqq40WNdMLdjqMZlNcb4AEBrNvWiSFd1MYE"
+    let key = ''//use Your unique key for email validation;
     let email = document.getElementById("email").value 
     let url = `https://api.emailvalidation.io/v1/info?apikey=${key}&email=${email}`
     let res = await fetch(url)

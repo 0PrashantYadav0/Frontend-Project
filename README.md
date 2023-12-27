@@ -8,7 +8,6 @@
 
 ## Digital clock
 
-## Music player
 
 ## To do list
 
